@@ -1,0 +1,118 @@
+.header-part{
+    border-bottom: 2px solid $gry;
+    background: $white;
+    //--------------sub header------------------
+    .subheader{
+        padding: 13px 45px 9px 45px;
+        background-color:$primary;
+        color: $white;
+        .subheader-leftpart{
+            h3{
+                font-size: 14px;
+                line-height: 24px;
+                padding: 0 44px 0 19px;
+                a{
+                    color:$white;
+                    font-weight: 300;
+                    &:hover{
+                        color:$hover-color;
+                    }
+                }
+
+            }
+         
+           
+        }
+        .subheader-rightpart{
+            h3{
+                font-size: 14px;
+                line-height: 24px;
+                a{
+                    color:$white;
+                    font-weight: 300;
+                    &:hover{
+                        color:$hover-color;
+                    }
+                }
+
+            }
+            p{
+                padding :0 28px 0 36px;
+
+            }
+        }
+    }
+
+    //---------------mainheader-------------------
+    .mainheader{
+        padding : 24px 45px;
+        .logo{
+            .logo-item{
+                width: 91px;
+                height: 53px;
+            }
+        }
+        .search-bar{
+            
+                .search-icon{
+                    color:$primary;
+                    position: relative; 
+                    left: 45px;
+                }
+                .search-input{
+                    border: none;
+                    height: 42px;
+                    background: $gry-white;
+                    border-radius: 10px;
+                    width: 576px;
+                    padding: 0 50px; 
+                 
+                }
+                svg{
+                    top: 5px;
+                    position: relative;
+                    right: 45px;
+                }
+            
+        }
+        .mainheader-right{
+            
+            img{
+                width: 27px;
+                height: 27px;
+                margin-left: 13px;
+                border-radius: 50%;
+            }
+            p{
+              text-transform: capitalize;
+              a{
+                  color: $primary;
+                  &:hover{
+                      color:$hover-color;
+                  }
+              }
+            }
+            .message{
+                font-size: 24px;
+                margin-top: 5px;
+                text-align: center;
+            }
+            .counter{
+                position: absolute;
+                top: 2px;
+                left: 58px;
+                width: 17px;
+                height: 17px;
+                padding: 2px;
+                background: $Soft-Red;
+                border-radius: 50%;
+                color: $white;
+                font-weight: 300;
+                text-align: center;
+            }
+            svg{
+                margin-top: 5px;
+            }
+        }
+    }
+}

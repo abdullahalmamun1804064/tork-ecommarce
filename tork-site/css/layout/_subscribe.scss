@@ -1,0 +1,37 @@
+.subscribe{
+    text-align: center;
+    h3{
+        font-weight: 600;
+        padding: 0 200px;
+        font-size: 35px;
+    }
+    .mail{
+        display: flex;
+        padding:87px 200px;
+        input{
+            padding: 10px 20px;
+            width: 585px;
+            margin-left: 55px;
+            border: none;
+            border-radius: 10px;
+        }
+        .btn{
+            position: relative;
+            top : 0;
+            left: 15px;
+            border: none;
+            padding: 10px 68px;
+            border-radius: 10px;
+            color: $white;
+            background-color: $active-blue;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                background-color:$placeholder;
+                color:$active-blue;
+
+            }
+            }
+    }
+}

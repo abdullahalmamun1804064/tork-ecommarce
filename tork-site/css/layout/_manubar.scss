@@ -1,0 +1,165 @@
+.manubar{  
+    background: $white;
+    height: 72px;
+    padding : 0 45px;
+    .manubar-leftpart{ 
+      
+        .dropdown-btn{
+            cursor:pointer;
+            padding: 5px 0;
+            margin-bottom: 20px;
+            position: relative;
+            top: 20px;
+
+            svg{
+                padding-top:5px;
+            }
+            .up-icon{
+               display: none;
+            }
+            .slash{
+             color:$Gray;
+             margin-left: 10px;
+            }                 
+        }
+
+        .dropdown-items{
+            background:$gry;
+            padding: 20px;
+            width: 500px;
+            border-radius: 10px;
+            display: none;
+            li{           
+                a{   
+                    line-height: 40px;
+                    color: $primary;
+                    &:hover{
+                        color:$hover-color;
+                    }
+                }
+            }
+        }
+        &:hover{
+            color:$hover-color;
+            .dropdown-items{
+                position:absolute;
+                z-index: 9999999;
+                display: block;
+               // z-index: 100;
+            }
+            .up-icon{
+                display:inline-block;
+            }
+            .down-icon{
+                display: none;
+            }
+            .slash
+            {
+                color:$Gray;
+                margin-left: 10px;
+            }
+        }
+    }
+    .manubar-middlepart{
+        ul{
+            display: flex;
+            line-height:80px;
+            li{
+                padding-right: 20px;
+                a{
+                    color: $primary;
+                    &:hover{
+                        color:$hover-color;
+                    }
+                }
+            }
+        }
+    }
+    .manubar-rightpart{
+        margin-top: 35px;
+
+      .slash{
+        color:$Gray;
+        margin-left: 10px;
+    
+      }
+      a{
+        //margin-left: -10px;
+        color: $primary;
+        &:hover{
+            color:$hover-color;
+        }
+      }
+      .language-select {
+        width: 100px;
+        position: relative;
+        user-select: none;
+          .select_wrap{
+              .default_language_option{
+               
+                position: relative;
+                cursor: pointer;
+               
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 5px;
+                    right: 18px;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid ;
+                    border-color: transparent transparent $primary $primary;
+                    transform: rotate(-45deg);
+                }
+              }
+          
+          .select_language_ul{
+            position: absolute;
+            top: 27px; 
+            width: 100%;
+            border-radius: 10px;
+            display: none;
+            right: 0px;
+              li{
+                padding: 10px 17px ;
+                position: relative;
+                cursor: pointer;
+                width: 130px;
+                background-color: $gry;
+                right: 30px;
+                z-index: 101;
+
+                 &:first-child{
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                }
+                &:last-child{
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+                &:hover{
+                    color: $hover-color;
+                }
+
+              }
+             
+          }
+        }
+          .select_wrap.active{
+              .default_language_option{
+                    color:$hover-color;
+                    &:before{
+                        top: 5px;
+                        border-color: transparent transparent  $hover-color $hover-color;
+                        transform: rotate(-225deg);
+                    }
+              }
+           
+            .select_language_ul{
+                display: block;
+                }
+
+          }
+      }
+    }
+}

@@ -1,0 +1,55 @@
+.footer-part{
+   
+    background: $primary; 
+    color:$white;
+    padding: 71px 45px  10px 45px;
+    border-bottom: 2px solid #fff;
+    .footer-all-services{
+        div{
+            h3{
+                font-size:25px;
+                font-weight: 600;
+                //
+            }
+            a{
+                p{
+                    line-height:28px; 
+                    color: $white;
+                }
+                img{
+                    padding: 10px 15px 0 15px;
+                }
+                &:hover{
+                    p{
+                        color:$hover-color;
+                    }
+                }
+            }
+        
+        }
+    }
+    .footer-contact{
+        padding :20px 0;
+        span{
+            font-size: 14px;
+            margin-right: 10px;
+            position: relative;
+            top: -5px;
+        }
+        svg{
+        margin-left:10px;
+        }
+        a{
+            color:$sky;
+            i{
+                font-size: 23px;
+                top: -3px;
+                position: relative;
+                margin-left: 10px;
+            }
+        }
+     }
+
+}  
+ 
+    

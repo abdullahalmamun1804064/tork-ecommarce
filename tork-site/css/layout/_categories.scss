@@ -1,0 +1,103 @@
+.categories{
+    padding: 0 45px;
+    .title{
+        margin:145px 0 80px 0;
+        font-size:35px;
+        text-align: center;
+    }
+
+    .single-categorie{
+        .categorie-headerpart{
+            margin-bottom: 28px;
+            .categorie-name{
+            color: $Secondary;
+            font-size: 22px;
+            margin: -6px 0;
+            }
+            a{
+                
+                color:$dark-blue;
+                &:hover{
+                    
+                    color:$hover-color;
+                }
+                &:before{
+                    content: "";
+                    width: 87%;
+                    height: 2px;
+                    background: #A8A8B0;
+                    position: absolute;
+                    left: 18px;
+                    top: 8px;
+                }
+            }
+
+        }
+        .categorie-bodypart{
+            margin-bottom: 68px;
+            .categorie-left-bodypart{
+                img{
+                    position: absolute;
+                    width:300px;
+                    height: 334px;
+                    border-radius: 10px;
+                }
+                .btn{
+                position: relative;
+                top:290px;
+                left: 16px;
+                padding: 10px 68px;
+                border-radius: 10px;
+                color:$white;
+                background-color:$active-blue;
+                transition: 0.3s;
+                &:hover{
+                    background-color:$white;
+                    color:$active-blue;
+                }
+                }
+            }
+            .categorie-right-bodypart{
+                a{
+                    .single-categorie-item{
+                        background-color:$white;
+                        display: flex;
+                        margin:0 16px 35px 16px;
+                        border-radius:10px;
+                        .single-categorie-item-leftpart{
+                            padding: 12px 0 5px 0;
+                            h6{
+                                font-size: 14px;
+                                color: $primary;
+                                margin:8px 0;
+                            }
+                            p{
+                                font-size: 14px;
+                                color: $Secondary;
+                            }
+                        }
+                        .single-categorie-item-rightpart{
+                            img{
+                                width:120px;
+                                height: 120px;
+                                padding:10px;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .single-categorie-item{
+                            .single-categorie-item-leftpart{
+                              h6,p{
+                                        color:$hover-color;
+                              }
+                            }                      
+                        }
+                    }
+                }
+          
+            }
+        }
+    } 
+   
+    
+}

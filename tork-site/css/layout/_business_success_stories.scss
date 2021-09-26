@@ -1,0 +1,149 @@
+.business-success-stories{
+    padding: 0 45px;
+    .business-success-stories-header{
+            padding-top: 145px;
+        h3{
+            font-size: 35px;
+            font-weight: 600;
+
+        }
+        a{
+            font-size: 16px;
+            font-weight: 600;
+            color: $pure-black;
+            line-height: 50px;
+            &:hover{
+                color: $hover-color;
+            }
+
+        }
+    }
+    .business-success-stories-body{
+        padding: 70px 0;
+         
+        .single-business-success-storie{  
+            background-color:$white;
+            border-radius: 10px;
+            width: 600px;
+            height:356px;
+        
+            .single-left-business-success-storie{
+                text-align: center;
+                position: relative;
+                img{
+                    width: 200px;
+                    height: 135px;
+                    margin: 99px;
+
+                }
+                &:before{
+                    content: "";
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 10px;
+                    background:$dark-light;
+                    position: absolute;
+                    left: 60px;
+                    bottom:0;
+                }
+                &:after{
+                    content: "";
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 10px;
+                    background:$Secondary;
+                    position: absolute;
+                    left: 75px;
+                    bottom: 15px;
+                    z-index: 10;
+                }
+
+
+
+            }
+            .single-right-business-success-storie{
+                p{
+                    padding: 30px 32px 25px 20px;
+                    line-height: 30px;
+                    height: 277px;
+                    font-size: 14px;
+                    overflow: hidden;
+                }
+                
+                .btn{
+                    text-align: center;
+                    width:245px;
+                    height: 50px;
+                    font-size:16px;
+                    background: $active-blue;
+                    color:$white;
+                    border: none;
+                    border-radius: 10px;
+                    position: relative;
+                    left: 50%;
+                    transform:translateX(-50%);
+                    transition: 0.3s;
+                    cursor: pointer;
+                    margin: 0 0 28px -15px;
+                    &:hover{
+                        background:$white;
+                        color:$active-blue;
+                        border:1px solid $active-blue;
+                        margin: 0 0 28px -15px;
+                    }
+
+                }
+            }
+        }
+    }
+    .business-success-stories-pagination{
+        .pagination {
+            left: 50%;
+            transform:translateX(-50%);
+            position: absolute;
+            
+            .pre,.next{
+                width: 25px;
+                height: 25px;
+                color: $primary;
+                background: $white;
+                text-align: center;
+                line-height: 25px;
+                border-radius: 50%;
+                margin: 0 17px;
+                &:hover{
+                    color:$white;
+                    background: $active-blue;
+                }
+            }
+            ul{
+                li{
+                        width: 25px;
+                        height: 25px;
+                        background: $white;
+                        text-align: center;
+                        line-height: 25px;
+                        border-radius: 50%;
+                        margin: 0 17px;
+                        a{
+                            color:$primary;
+                        }
+
+                    &:hover{
+                         background: $active-blue;
+                        a{
+                            color:$white; 
+                        }
+                    }
+                   
+                }
+                .active{
+                    background: $active-blue;
+                    a{
+                        color:$white; 
+                    }
+                }
+            }
+        }
+    }
+}

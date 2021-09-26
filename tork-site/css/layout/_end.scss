@@ -1,0 +1,16 @@
+.end-part{
+    background: $primary;
+    padding:10px 45px;
+    color:$white;
+    svg{
+      height: 16px;
+
+    }
+    a{
+        color:$white;
+        &:hover{
+            color:$hover-color;
+        }
+        
+    }
+}
